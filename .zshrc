@@ -1,12 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/vitor/.oh-my-zsh"
+# Tilix fix
+if [[ $TILIX_ID ]]; then
+    source /etc/profile.d/vte-2.91.sh
+fi
 
-# Global Variables
-export ANDROID_HOME=/Users/vitor/Library/Android/sdk
-export JAVA_HOME=$(/usr/libexec/java_home)
+# Path to your oh-my-zsh installation.
+export ZSH="/home/vitor/.oh-my-zsh"
 
 # Binary exports
 export PATH=~/.nvim/bin:$PATH
@@ -17,13 +18,13 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+ZSH_THEME="robbyrussell"
 
-SPACESHIP_PACKAGE_SHOW=false
-SPACESHIP_NODE_SHOW=false
-SPACESHIP_RUBY_SHOW=false
-SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_KUBECONTEXT_SHOW=false
+# SPACESHIP_PACKAGE_SHOW=false
+# SPACESHIP_NODE_SHOW=false
+# SPACESHIP_RUBY_SHOW=false
+# SPACESHIP_DOCKER_SHOW=false
+# SPACESHIP_KUBECONTEXT_SHOW=false
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -114,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias vimconfig="nvim ~/.config/nvim/init.vim"
@@ -124,6 +126,7 @@ alias notes="cd ~/Documents/Notes"
 alias gs="git status ."
 alias gpoh="git push origin HEAD"
 alias l="tree -a"
+alias e="exit"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
@@ -131,3 +134,5 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
