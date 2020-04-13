@@ -1,0 +1,5 @@
+[user]
+	name = Vitor Freitas
+	email = vitorldfreitas@gmail.com
+[core]
+	editor = nvim
