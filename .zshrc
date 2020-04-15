@@ -129,5 +129,5 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
