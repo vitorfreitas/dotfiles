@@ -1,0 +1,31 @@
+snippet it "it (mocha)" b
+it('${1:description}', () => {
+  ${2:body}
+})
+endsnippet
+
+snippet ait "async it (mocha)" b
+it('${1:description}', async () => {
+  ${2:body}
+})
+endsnippet
+
+snippet desc "describe (mocha)" b
+describe('${1:description}', () => {
+  ${2:body}
+})
+endsnippet
+
+snippet anfn "anonymous function" b
+(${1:args}) => {
+  ${2:body}
+}
+endsnippet
+
+snippet log "console.log" b
+console.log(${1:args})
+endsnippet
+
+snippet warn "console.warn" b
+console.warn(${1:args})
+endsnippet
