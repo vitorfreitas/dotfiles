@@ -17,6 +17,14 @@ set termguicolors
 syntax on
 colorscheme gruvbox
 
+" COLORS
+highlight! Normal ctermbg=NONE guibg=NONE
+highlight! LineNr ctermfg=NONE guibg=NONE
+highlight! SignColumn ctermfg=NONE guibg=NONE
+highlight! StatusLineNC guifg=#16252b guibg=#16252b
+highlight! Search guibg=lightblue guifg=black
+highlight! StatusLine guibg=#ffcc40 guifg=Black ctermbg=46 ctermfg=0
+
 " TABS
 set expandtab
 set softtabstop=2
@@ -99,18 +107,6 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-j> <c-w>j
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
-
-" Make background transparent for many things
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
-hi! LineNr ctermfg=NONE guibg=NONE
-hi! SignColumn ctermfg=NONE guibg=NONE
-hi! StatusLine guifg=#16252b guibg=#6699CC
-hi! StatusLineNC guifg=#16252b guibg=#16252b
-
-" Colors
-hi Search guibg=lightblue guifg=black
-hi StatusLine guibg=#ffcc40 guifg=Black ctermbg=46 ctermfg=0
 
 " Reload icons after init source
 if exists('g:loaded_webdevicons')
