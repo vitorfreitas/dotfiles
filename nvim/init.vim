@@ -96,6 +96,20 @@ nmap <leader>y :StripWhitespace<CR>
 " easy-motion
 map <leader>w <Plug>(easymotion-bd-w)
 
+" Fugitive
+nnoremap <Leader>gd :Gvdiff<cr>
+nnoremap <Leader>gs :Gstatus<cr>
+nnoremap <Leader>gw :Gwrite<cr>
+nnoremap <Leader>ga :Git add<cr>
+nnoremap <Leader>gb :Gblame<cr>
+nnoremap <Leader>gc :Gcommit<cr>
+nnoremap <Leader>ge :Gedit<cr>
+nnoremap <Leader>gm :Gmove
+nnoremap <Leader>gr :Gread<cr>
+nnoremap <Leader>grm :Gremove<cr>
+nnoremap <Leader>gp :Git push
+nnoremap <Leader>gl :0Glog<cr>
+
 " Mappings
 map <leader>h :%s///<left><left>
 nnoremap <leader><space> :nohlsearch<CR>
