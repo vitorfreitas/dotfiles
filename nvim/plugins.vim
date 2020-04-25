@@ -35,6 +35,8 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
+Plug 'mattn/emmet-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Git
 Plug 'mhinz/vim-signify'
