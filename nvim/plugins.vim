@@ -30,13 +30,14 @@ Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/argtextobj.vim'
 
 " Languages and frameworks
-Plug 'posva/vim-vue'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-markdown'
+" Plug 'posva/vim-vue'
+" Plug 'mxw/vim-jsx'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'pangloss/vim-javascript'
+" Plug 'tpope/vim-markdown'
 Plug 'mattn/emmet-vim'
-Plug 'peitalin/vim-jsx-typescript'
+" Plug 'peitalin/vim-jsx-typescript'
+Plug 'sheerun/vim-polyglot'
 
 " Git
 Plug 'mhinz/vim-signify'
@@ -46,6 +47,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
+Plug 'phanviet/vim-monokai-pro'
 
 " Completion and snippets
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

@@ -14,8 +14,10 @@ set colorcolumn=+1
 " UI
 set numberwidth=5
 set termguicolors
+set background=dark
+set t_Co=256
 syntax on
-colorscheme gruvbox
+colorscheme monokai_pro
 
 " COLORS
 highlight! Normal ctermbg=NONE guibg=NONE
