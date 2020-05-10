@@ -134,3 +134,5 @@ bindkey "[C" forward-word
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+eval "$(starship init zsh)"
