@@ -1,0 +1,12 @@
+[character]
+symbol = "[I] ➜"
+vicmd_symbol = "[N] ➜"
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+[directory]
+truncation_length = 2
