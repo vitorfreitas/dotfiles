@@ -122,7 +122,7 @@ alias estudo="cd ~/Estudo"
 alias notes="cd ~/Documents/Notes"
 alias gs="git status ."
 alias gpoh="git push origin HEAD"
-alias l="tree -a"
+alias l="tree -a -L 1"
 alias e="exit"
 alias q="exit"
 
