@@ -2,7 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/vitor/.oh-my-zsh"
+
+if [ "$(uname 2> /dev/null)" = "Linux" ]; then
+  export ZSH="/home/vitor/.oh-my-zsh"
+else
+  export ZSH=$HOME/.oh-my-zsh
+fi
 
 # Binary exports
 export PATH=~/.nvim/bin:$PATH
@@ -132,7 +137,9 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+if [ "$(uname 2> /dev/null)" = "Linux" ]; then
+  source /usr/share/fzf/key-bindings.zsh
+  source /usr/share/fzf/completion.zsh
+fi
 
 eval "$(starship init zsh)"
