@@ -143,3 +143,5 @@ if [ "$(uname 2> /dev/null)" = "Linux" ]; then
 fi
 
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
