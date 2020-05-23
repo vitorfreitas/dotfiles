@@ -23,20 +23,13 @@ Plug 'rstacruz/vim-closer'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
-Plug 'tomtom/tcomment_vim'
 Plug 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'vim-scripts/argtextobj.vim'
 
 " Languages and frameworks
-" Plug 'posva/vim-vue'
-" Plug 'mxw/vim-jsx'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'pangloss/vim-javascript'
-" Plug 'tpope/vim-markdown'
 Plug 'mattn/emmet-vim'
-" Plug 'peitalin/vim-jsx-typescript'
 Plug 'sheerun/vim-polyglot'
 
 " Git
@@ -45,9 +38,11 @@ Plug 'tpope/vim-fugitive'
 
 " UI
 Plug 'scrooloose/nerdtree'
-Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
-Plug 'phanviet/vim-monokai-pro'
+Plug 'morhetz/gruvbox'
+Plug 'talek/obvious-resize'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Completion and snippets
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

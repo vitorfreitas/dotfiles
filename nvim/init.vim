@@ -17,7 +17,7 @@ set termguicolors
 set background=dark
 set t_Co=256
 syntax on
-colorscheme monokai_pro
+colorscheme gruvbox
 
 " COLORS
 highlight! Normal ctermbg=NONE guibg=NONE
@@ -39,6 +39,13 @@ set shortmess-=S
 set lazyredraw
 set ignorecase
 set smartcase
+
+" obvious resize
+let g:obvious_resize_default = 2
+nnoremap <silent> <Left>  :<C-U>ObviousResizeLeft<CR>
+nnoremap <silent> <Down>  :<C-U>ObviousResizeDown<CR>
+nnoremap <silent> <Up>    :<C-U>ObviousResizeUp<CR>
+nnoremap <silent> <Right> :<C-U>ObviousResizeRight<CR>
 
 " coc.nvim
 inoremap <silent><expr> <TAB>
