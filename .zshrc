@@ -130,6 +130,8 @@ alias gpoh="git push origin HEAD"
 alias l="tree -a -L 1"
 alias e="exit"
 alias q="exit"
+alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas'"
+alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
