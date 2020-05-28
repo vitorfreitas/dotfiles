@@ -78,7 +78,8 @@ let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$']
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd FileType nerdtree setlocal relativenumber
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 " signify
 let g:signify_sign_delete = '-'
