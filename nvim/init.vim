@@ -40,6 +40,17 @@ set lazyredraw
 set ignorecase
 set smartcase
 
+" lightline.vim
+let g:lightline = {
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'FugitiveHead'
+  \ },
+  \ }
+
 " obvious resize
 let g:obvious_resize_default = 2
 nnoremap <silent> <Left>  :<C-U>ObviousResizeLeft<CR>
@@ -65,8 +76,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
 inoremap <silent><expr> <C-x> <C-o> coc#refresh()
-
-autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger="<c-k>"
