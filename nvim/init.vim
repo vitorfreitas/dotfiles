@@ -24,7 +24,7 @@ highlight! Normal ctermbg=NONE guibg=NONE
 highlight! LineNr ctermfg=NONE guibg=NONE
 highlight! SignColumn ctermfg=NONE guibg=NONE
 highlight! StatusLineNC guifg=#16252b guibg=#16252b
-highlight! Search guibg=lightblue guifg=black
+highlight! Search guibg=lightblue guifg=#777777
 highlight! StatusLine guibg=#ffcc40 guifg=Black ctermbg=46 ctermfg=0
 
 " TABS
