@@ -106,7 +106,8 @@ let g:jsx_ext_required = 0
 let g:vue_pre_processors = ['sass']
 
 " fzf
-nmap ; :Files<CR>
+command! FzfListFiles execute (len(fugitive#head())) ? 'GFiles' : 'Files'
+nmap ; :FzfListFiles<CR>
 nmap <leader>; :Ag<CR>
 
 " vim-better-whitespace
@@ -140,6 +141,7 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-j> <c-w>j
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+nnoremap gq :q<CR>
 
 " Reload icons after init source
 if exists('g:loaded_webdevicons')
