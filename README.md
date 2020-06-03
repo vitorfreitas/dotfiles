@@ -1,10 +1,8 @@
 # Vitor's dotfiles
 
-This repo contains my personal dotfiles. Always WIP.
-
-I've created [this](git@github.com:vitorfreitas/vimfiles.git) before containing my vimfiles.
-Here I'm using git submodules to point to that repo.
+This repo contains my personal set of dotfiles. Always WIP.
 
 ## Usage
 
-Clone this repo and run `git submodule update --init --recursive` to pull files from `/nvim` and `/tmux` submodules.
+Clone this repo and run `./run.sh`. I use macOS and arch linux, so the configs
+here are meant to work on those environments.
