@@ -11,6 +11,7 @@ set scrolloff=3
 set textwidth=80
 set colorcolumn=+1
 set foldmethod=indent
+set foldlevelstart=20
 
 " UI
 set numberwidth=5
