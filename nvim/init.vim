@@ -10,6 +10,7 @@ set nowrap
 set scrolloff=3
 set textwidth=80
 set colorcolumn=+1
+set foldmethod=indent
 
 " UI
 set numberwidth=5
