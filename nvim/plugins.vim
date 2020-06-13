@@ -40,7 +40,7 @@ Plug 'tpope/vim-fugitive'
 " UI
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'talek/obvious-resize'
 Plug 'itchyny/lightline.vim'
 
