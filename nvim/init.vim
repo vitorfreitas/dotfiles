@@ -101,12 +101,6 @@ hi! SignifySignAdd guifg=#99c794
 hi! SignifySignDelete guifg=#ec5f67
 hi! SignifySignChange guifg=#c594c5
 
-" vim-jsx
-let g:jsx_ext_required = 0
-
-" vim-vue
-let g:vue_pre_processors = ['sass']
-
 " fzf
 command! FzfListFiles execute (len(fugitive#head())) ? 'GFiles' : 'Files'
 nmap ; :FzfListFiles<CR>
