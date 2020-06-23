@@ -55,10 +55,10 @@ let g:lightline = {
 
 " obvious resize
 let g:obvious_resize_default = 2
-nnoremap <silent> <Left>  :<C-U>ObviousResizeLeft<CR>
-nnoremap <silent> <Down>  :<C-U>ObviousResizeDown<CR>
-nnoremap <silent> <Up>    :<C-U>ObviousResizeUp<CR>
-nnoremap <silent> <Right> :<C-U>ObviousResizeRight<CR>
+nnoremap <silent> <A-h> :<C-U>ObviousResizeLeft<CR>
+nnoremap <silent> <A-j> :<C-U>ObviousResizeDown<CR>
+nnoremap <silent> <A-k> :<C-U>ObviousResizeUp<CR>
+nnoremap <silent> <A-l> :<C-U>ObviousResizeRight<CR>
 
 " coc.nvim
 inoremap <silent><expr> <TAB>
