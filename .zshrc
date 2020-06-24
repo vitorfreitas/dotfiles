@@ -140,8 +140,8 @@ bindkey "[D" backward-word
 bindkey "[C" forward-word
 
 if [ "$(uname 2> /dev/null)" = "Linux" ]; then
-  source /usr/share/fzf/key-bindings.zsh
-  source /usr/share/fzf/completion.zsh
+  source /usr/share/doc/fzf/examples/key-bindings.zsh
+  source /usr/share/doc/fzf/examples/completion.zsh
 fi
 
 eval "$(starship init zsh)"
