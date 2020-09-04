@@ -139,6 +139,7 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 nnoremap gq :q<CR>
 nnoremap gwq :wq<CR>
+inoremap jk <Esc>
 
 " Reload icons after init source
 if exists('g:loaded_webdevicons')
