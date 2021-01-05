@@ -37,6 +37,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
+" Debugger Plugins
+Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'
+
 " UI
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
