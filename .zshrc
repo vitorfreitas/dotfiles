@@ -134,8 +134,6 @@ alias q="exit"
 alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas'"
 alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
 
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-
 # Keybindings
 bindkey "[D" backward-word
 bindkey "[C" forward-word
@@ -152,3 +150,5 @@ eval "$(starship init zsh)"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
