@@ -14,6 +14,7 @@ export PATH=~/.nvim/bin:$PATH
 export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/home/vitor/.gem/ruby/2.7.0/bin
+export PATH=$PATH:/home/vitor/.local/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -116,6 +117,7 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+alias htop=bpytop
 alias lock="i3exit lock"
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
@@ -133,6 +135,7 @@ alias e="exit"
 alias q="exit"
 alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas'"
 alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
+alias ws="setsid ~/Downloads/WebStorm-211.7142.46/bin/webstorm.sh nosplash . &>/dev/null"
 
 # Keybindings
 bindkey "[D" backward-word
