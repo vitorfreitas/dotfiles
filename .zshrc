@@ -3,11 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 
-if [ "$(uname 2> /dev/null)" = "Linux" ]; then
-  export ZSH="/home/vitor/.oh-my-zsh"
-else
-  export ZSH=$HOME/.oh-my-zsh
-fi
+export ZSH=$HOME/.oh-my-zsh
 
 # Binary exports
 export PATH=~/.nvim/bin:$PATH
@@ -153,5 +149,9 @@ eval "$(starship init zsh)"
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

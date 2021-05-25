@@ -1,6 +1,6 @@
 [character]
-symbol = "[I] ➜"
-vicmd_symbol = "[N] ➜"
+success_symbol = '[\[I\]](green) ➜'
+vicmd_symbol = '[\[N\]](red) ➜'
 
 [package]
 disabled = true
