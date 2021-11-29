@@ -9,8 +9,8 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH=~/.nvim/bin:$PATH
 export PATH=$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export PATH=$PATH:/home/vitor/.gem/ruby/2.7.0/bin
-export PATH=$PATH:/home/vitor/.local/bin
+export PATH=$PATH:/home/vitorfreitas/.gem/ruby/2.7.0/bin
+export PATH=$PATH:/home/vitorfreitas/.local/bin
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -123,6 +123,7 @@ alias tmuxconfig="nvim ~/.tmux.conf"
 alias vimplugs="nvim ~/.config/nvim/plugins.vim"
 alias trabalho="cd ~/Trabalho"
 alias estudo="cd ~/Estudo"
+alias freela="cd ~/Freela"
 alias notes="cd ~/Documents/Notes"
 alias gs="git status ."
 alias gpoh="git push origin HEAD"
@@ -132,6 +133,7 @@ alias q="exit"
 alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas'"
 alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
 alias ws="setsid ~/Downloads/WebStorm-211.7142.46/bin/webstorm.sh nosplash . &>/dev/null"
+alias upgrade_dbeaver="~/Estudo/upgrade_dbeaver.sh"
 
 # Keybindings
 bindkey "[D" backward-word
