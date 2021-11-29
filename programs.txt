@@ -1,0 +1,14 @@
+* vpn
+* webstorm
+* telegram
+* spotify
+* chrome
+* tilix
+* vim
+* slack
+* insomnia
+* flameshot
+* node/n
+* ohmyzsh
+* starship
+* docker/docker-compose
