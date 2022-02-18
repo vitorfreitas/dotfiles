@@ -12,6 +12,10 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/home/vitorfreitas/.gem/ruby/2.7.0/bin
 export PATH=$PATH:/home/vitorfreitas/.local/bin
 
+. $HOME/.asdf/asdf.sh
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -132,7 +136,7 @@ alias e="exit"
 alias q="exit"
 alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas'"
 alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
-alias ws="setsid ~/Downloads/WebStorm-211.7142.46/bin/webstorm.sh nosplash . &>/dev/null"
+alias ws="setsid ~/Downloads/WebStorm-213.6461.79/bin/webstorm.sh nosplash . &>/dev/null"
 alias upgrade_dbeaver="~/Estudo/upgrade_dbeaver.sh"
 
 # Keybindings
