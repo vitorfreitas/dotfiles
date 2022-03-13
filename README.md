@@ -1,8 +1,16 @@
-# Vitor's dotfiles
+# dotfiles
 
-This repo contains my personal set of dotfiles. Always WIP.
+always WIP.
 
-## Usage
+## nvim setup
 
-Clone this repo and run `./run.sh`. I use macOS and arch linux, so the configs
-here are meant to work on those environments.
+1. `:PlugInstall`
+2. install the following coc extensions (`:CocInstall`):
+    * coc-tsserver
+    * coc-solargraph
+    * coc-json
+    * coc-eslint
+
+## tmux setup
+
+`tmux source-file ~/tmux/.tmux.conf`
