@@ -144,17 +144,17 @@ nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
 
 " Fugitive
 nnoremap <Leader>gd :Gvdiff<cr>
-nnoremap <Leader>gs :Gstatus<cr>
+nnoremap <Leader>gs :Git status<cr>
 nnoremap <Leader>gw :Gwrite<cr>
 nnoremap <Leader>ga :Git add<cr>
-nnoremap <Leader>gb :Gblame<cr>
-nnoremap <Leader>gc :Gcommit<cr>
+nnoremap <Leader>gb :Git blame<cr>
+nnoremap <Leader>gc :Git commit<cr>
 nnoremap <Leader>ge :Gedit<cr>
 nnoremap <Leader>gm :Gmove
 nnoremap <Leader>gr :Gread<cr>
 nnoremap <Leader>grm :Gremove<cr>
 nnoremap <Leader>gp :Git push
-nnoremap <Leader>gl :0Glog<cr>
+nnoremap <Leader>gl :Gclog<cr>
 
 " Mappings
 map <leader>h :%s///<left><left>
