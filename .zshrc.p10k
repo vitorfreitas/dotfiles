@@ -1,0 +1,57 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+export PATH=$PATH:/home/vitorfreitas/.cargo/bin
+export PATH=$PATH:/home/vitorfreitas/.bin
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.git.zsh
+
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+alias ls="exa --icons"
+alias cat="bat"
+alias top="ytop"
+alias vim="nvim"
+alias zshconfig="nvim ~/.zshrc"
+alias vimconfig="nvim ~/.config/nvim/init.vim"
+alias vimplugs="nvim ~/.config/nvim/plugins.vim"
+alias work="cd ~/Work"
+alias study="cd ~/Study"
+alias freela="cd ~/Freela"
+alias l="tree -a -L 1"
+alias e="exit"
+alias q="exit"
+alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas'"
+alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
+alias ws="setsid ~/Downloads/WebStorm-213.6461.79/bin/webstorm.sh nosplash . &>/dev/null"
+alias qr_install="bundle install && yarn install"
+
+. /opt/asdf-vm/asdf.sh
+
+# Plugins
+
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+autoload -Uz compinit && compinit
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
