@@ -8,6 +8,7 @@ fi
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export PATH=$PATH:/home/vitorfreitas/.cargo/bin
 export PATH=$PATH:/home/vitorfreitas/.bin
+export PATH=$PATH:/home/vitorfreitas/.local/bin
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
@@ -24,11 +25,11 @@ bindkey "^[[1;5D" backward-word
 alias ls="exa --icons"
 alias cat="bat"
 alias top="ytop"
-alias vim="nvim"
+alias vim="lvim"
 alias zshconfig="nvim ~/.zshrc"
-alias vimconfig="nvim ~/.config/nvim/init.vim"
+alias vimconfig="nvim ~/.config/lvim/config.lua"
 alias vimplugs="nvim ~/.config/nvim/plugins.vim"
-alias work="cd ~/Work"
+alias work="cd ~/Work/QultureApp"
 alias study="cd ~/Study"
 alias freela="cd ~/Freela"
 alias l="tree -a -L 1"
