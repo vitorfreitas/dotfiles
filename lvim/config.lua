@@ -11,10 +11,28 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "onedarker"
+lvim.colorscheme = "gruvbox"
 vim.opt.relativenumber = true
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevelstart = 20
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+
+vim.api.nvim_create_autocmd("CursorHold", {
+  buffer = bufnr,
+  callback = function()
+    local opts = {
+      focusable = false,
+      close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+      border = 'rounded',
+      source = 'always',
+      prefix = ' ',
+      scope = 'cursor',
+    }
+    vim.diagnostic.open_float(nil, opts)
+  end
+})
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = ","
@@ -25,6 +43,22 @@ lvim.keys.normal_mode["H"] = "0^"
 lvim.keys.normal_mode["L"] = "$"
 lvim.keys.normal_mode["<C-n>"] = ":bnext<cr>"
 lvim.keys.normal_mode["<C-p>"] = ":bprevious<cr>"
+
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_assume_mapped = true
+vim.g.copilot_tab_fallback = ""
+local cmp = require "cmp"
+
+lvim.builtin.cmp.mapping["<C-j>"] = function(fallback)
+  cmp.mapping.abort()
+  local copilot_keys = vim.fn["copilot#Accept"]()
+  if copilot_keys ~= "" then
+    vim.api.nvim_feedkeys(copilot_keys, "i", true)
+  else
+    fallback()
+  end
+end
+
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = false
 -- edit a default keymapping
@@ -148,7 +182,11 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- Additional Plugins
 lvim.plugins = {
   {"wakatime/vim-wakatime"},
-  {"tpope/vim-rails"}
+  {"tpope/vim-rails"},
+  {"tpope/vim-abolish"},
+  {"rmehri01/onenord.nvim"},
+  {"github/copilot.vim"},
+  {"morhetz/gruvbox"}
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

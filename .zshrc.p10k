@@ -27,8 +27,8 @@ alias cat="bat"
 alias top="ytop"
 alias vim="lvim"
 alias zshconfig="nvim ~/.zshrc"
-alias vimconfig="nvim ~/.config/lvim/config.lua"
-alias vimplugs="nvim ~/.config/nvim/plugins.vim"
+alias vimconfig="vim ~/.config/lvim/config.lua"
+alias vimplugs="vim ~/.config/nvim/plugins.vim"
 alias work="cd ~/Work/QultureApp"
 alias study="cd ~/Study"
 alias freela="cd ~/Freela"
@@ -39,6 +39,7 @@ alias daily="git log --since=1.day --oneline --no-merges --author='Vitor Freitas
 alias daily-monday="git log --since=3.day --oneline --no-merges --author='Vitor Freitas'"
 alias ws="setsid ~/Downloads/WebStorm-213.6461.79/bin/webstorm.sh nosplash . &>/dev/null"
 alias qr_install="bundle install && yarn install"
+alias qr_db="docker-compose up postgres redis -d"
 
 . /opt/asdf-vm/asdf.sh
 
