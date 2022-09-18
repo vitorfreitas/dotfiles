@@ -1,6 +1,0 @@
-pane	base	0	:zsh	1	:*	0	:/home/vitor	1	zsh	:
-pane	rock	0	:zsh	1	:*	0	:/home/vitor/Trabalho/rockos-web-core	0	zsh	:
-pane	rock	0	:zsh	1	:*	1	:/home/vitor/Trabalho/rockos-api-payment	1	zsh	:
-window	base	0	1	:*	b9dd,212x53,0,0,0
-window	rock	0	1	:*	f87e,212x53,0,0{106x53,0,0,1,105x53,107,0,2}
-state	rock	

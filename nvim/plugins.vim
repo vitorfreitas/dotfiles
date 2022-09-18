@@ -17,8 +17,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " Editing
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'rstacruz/vim-closer'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
@@ -28,30 +26,19 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-abolish'
-Plug 'tpope/vim-rails'
 
 " Languages and frameworks
-Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 
 " Git
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
-" Debugger Plugins
-Plug 'puremourning/vimspector'
-Plug 'szw/vim-maximizer'
-
 " UI
-Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'gruvbox-community/gruvbox'
 Plug 'talek/obvious-resize'
 Plug 'itchyny/lightline.vim'
-
-" Completion and snippets
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'SirVer/ultisnips'
 
 " Time management
 Plug 'wakatime/vim-wakatime'

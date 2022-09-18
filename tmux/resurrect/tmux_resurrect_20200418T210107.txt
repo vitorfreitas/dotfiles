@@ -1,3 +1,0 @@
-pane	base	0	:zsh	1	:*	0	:/home/vitor	1	zsh	:
-window	base	0	1	:*	b9dd,212x53,0,0,0
-state	base	
