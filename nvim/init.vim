@@ -71,7 +71,7 @@ hi! SignifySignChange guifg=#c594c5
 
 " fzf
 command! FzfListFiles execute (len(fugitive#head())) ? 'GFiles' : 'Files'
-nmap ; :FzfListFiles<CR>
+nmap ; :Files<CR>
 nmap <leader>; :Ag<CR>
 
 " Fugitive
@@ -87,6 +87,10 @@ nnoremap <Leader>gr :Gread<cr>
 nnoremap <Leader>grm :Gremove<cr>
 nnoremap <Leader>gp :Git push
 nnoremap <Leader>gl :Gclog<cr>
+
+" Nerdtree
+map <Leader>nt :NERDTreeToggle<CR>
+map <Leader>nf :NERDTreeFind<CR>
 
 " Mappings
 nnoremap <leader><space> :nohlsearch<CR>

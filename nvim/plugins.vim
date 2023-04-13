@@ -39,6 +39,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'gruvbox-community/gruvbox'
 Plug 'talek/obvious-resize'
 Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdtree'
 
 " Time management
 Plug 'wakatime/vim-wakatime'
